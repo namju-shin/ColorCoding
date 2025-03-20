@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Coding</title>
+
+    <!--Open Graph-->
+    <!--http://ogp.me/-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Color Coding" />
+    <meta property="og:title" content="Color Coding" />
+    <meta name="description" content="컬러 & 코딩을 조화롭게 디자인하는 신남주의 포트폴리오 사이트">
+    <meta property="og:image" content="./img/og_image.png" />
+    <meta property="og:url" content="https://namju-shin.github.io/ColorCoding/" />
+    <!--  -->
+    
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/og_image.png" type="image/x-icon">
+
+    <!-- google webfont - noto sans + Pattaya -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+    <!-- phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="inner">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo_image.png" alt="로고 이미지"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li>
+                    <li><a href="sub_UXUI.html">UI UX DESIGN</a></li>
+                    <li><a href="sub_Web.html" class="active">WEB DESIGN</a></li>
+                    <li><a href="sub_Visual.html">VISUAL DESIGN</a></li>
+                    <li><a href="sub_Graphic.html">GRAPHIC DESIGN</a></li>
+                    <li><a href="sub_ContactMe.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+
+    <div class="header_area"></div>
+
+    <div class="web">
+        <div class="inner">
+            <div class="summary">
+                <h2>WEB DESIGN - 더본코리아 사이트 리뉴얼 프로젝트</h2>
+                <img src="./img/WEB_더본코리아_Mockup.jpg" alt="더본코리아 목업" onclick="openModal(this)">
+            </div>
+            <div class="main">
+                <div class="img_area">
+                    <img src="./img/WEB_더본코리아_Main.JPG" alt="더본코리아 메인페이지" onclick="openModal(this)">
+                </div>
+                <div class="text_area sub_text">
+                    <h4>더본코리아 리뉴얼 메인 페이지</h4>
+                    <p>
+                        외식 경영 전문가 백종원의 프랜차이즈 기업이라는 정체성을 강화하기 위하여 <br>
+                        브랜드와 대표의 강력한 이미지를 적극적으로 활용하여 <br>
+                        브랜드의 친밀도를 높이고 <br>
+                        접근성과 사용성을 강화하기 위한 방향으로 디자인을 진행하였습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="text_area sub_text">
+                    <h4>더본코리아 리뉴얼 서브 페이지</h4>
+                    <p>
+                        단순한 리스트 스타일의 매장 나열이 아닌 <br>
+                        매장의 지도 이미지를 노출하여 <br>
+                        매장의 위치 및 정보를 한눈에 볼 수 있도록 고객의 사용성을 강화하였습니다.
+                    </p>
+                </div>
+                <div class="img_area">
+                    <img src="./img/WEB_더본코리아_Sub.JPG" alt="더본코리아 서브페이지" onclick="openModal(this)">
+                </div>
+            </div>
+            <div class="button">
+                <a href="https://github.com/namju-shin/theBorn_renewal" target="_blank">github 바로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="fullImage" class="modal-content">
+    </div>
+    <!-- imageModal - 클릭하면 원본크기로 보기 -->
+
+
+    <div class="footer sub_text">
+        <div class="inner">
+            <p>&copy;2025 ColorCoding | Designed & Developed by Namju Shin</p>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="button_up">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </div>
+    <!-- button_up -->
+</body>
+</html>
