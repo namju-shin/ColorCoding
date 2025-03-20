@@ -269,12 +269,12 @@ h4{
     background-color: var(--sub_background);
     text-align: center;
     line-height: 80px;
-    border-radius: 10px;
+    border-radius: 50px;
     margin: var(--sub_gap) 0;
     float: right;
 }
 .web .button:hover{
-    background-color: var(--magenta);
+    background-color: #000;
     color: white;
     font-weight: 800;
 }
