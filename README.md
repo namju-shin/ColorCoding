@@ -17,7 +17,9 @@ Tech stack : HTML, CSS, JavaScript, Python, C, C++, etc.
 *** Project List
 
 - theBorn renewal (https://github.com/namju-shin/theBorn_renewal)
+  
   https://namju-shin.github.io/theBorn_renewal/index.html
   
 - ColorCoding (https://namju-shin.github.io/ColorCoding/index.html)
+  
   https://namju-shin.github.io/ColorCoding/index.html 
