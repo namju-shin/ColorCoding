@@ -62,12 +62,73 @@
 
     <div class="uxui">
         <div class="inner">
-            <div class="summary">
-                <h2>UI/UX DESIGN - 더본코리아 모바일 사이트 리뉴얼 프로젝트</h2>
-                
+            <h2>UI/UX DESIGN - 더본코리아 모바일 사이트 리뉴얼 프로젝트</h2>
+            <div class="part1">
+                <div class="img_area">
+                    <img src="./img/UIUX_모바일더본_Main_Mockup_최대파일.gif" alt="더본코리아 모바일 메인이미지"  onclick="openModal(this)">
+                </div>
+                <div class="text_area">
+                    <h4>더본코리아 모바일 사이트 리뉴얼</h4>
+                    <p>
+                        사용자가 더본코리아의 정체성을 빠르게 인식할 수 있도록 시각적 연출에 집중하였습니다. <br>
+                        다양한 프랜차이즈 브랜드들을 한눈에 직관적으로 한눈에 확인할 수 있도록 디자인을 설계하였으며, <br>
+                        전체적인 컬러의 톤, 폰트와, 간격, 이미지 등을 웹 사이트와 통일감 있게 구성하여, <br>
+                        웹페이지와 브랜드 경험 전반에서 일관성을 느낄 수 있도록 하였습니다.
+                    </p>
+                </div>
             </div>
+            <!-- part1 : project overview -->
+            <div class="part2">
+                <h4>Information Architecture</h4>
+                <img src="./img/UIUX_모바일더본_정보구조설계.jpg" alt="더본코리아 모바일 정보구조설계도" onclick="openModal(this)">
+            </div>
+            <!-- part2 : information architecture (IA) -->
+            <div class="part3">
+                <h4>Typography & Color</h4>
+                <p class="font_subTitle">서브페이지 타이틀 Noto Sans 44pt Bold</p>
+                <p class="font_mainMenu">메인 메뉴 Noto Sans 28pt Bold</p>
+                <p class="font_subMenu">서브 메뉴 Noto Sans 24pt Bold</p>
+                <p class="font_text">내용 Noto Sans 16pt Medium </p>
+                <p class="font_footer">푸터 Noto Sans 10pt Regular</p>
+                <div class="colorChipContainer">
+                    <div>
+                        <p>Main Color </p>
+                        <p class="color">#C42F34</p>
+                    </div>
+                    <div>
+                        <p>White </p>
+                        <p class="color">#ffffff</p>
+                    </div>
+                    <div>
+                        <p>Black </p>
+                        <p class="color">#000000</p>
+                    </div>
+                    <div>
+                        <p>Sub Text Color </p>
+                        <p class="color">#666666</p>
+                    </div>
+                </div>
+            </div>
+            <!-- part3 : Typography & Color -->
+            <div class="part4">
+                <h4>Wireframe</h4>
+                <img src="./img/UIUX_모바일더본_프로토타입.jpg" alt="더본코리아 모바일 와이어프레임" onclick="openModal(this)">
+            </div>
+            <!-- part4 : wireframe -->
+            <div class="part5">
+                <h4>Pages</h4>
+                <img src="./img/UIUX_모바일더본_전체_Mockup.jpg" alt="더본코리아 모바일 전체 목업" onclick="openModal(this)">
+            </div>
+            <!-- part5 : pages -->
         </div>
     </div>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="fullImage" class="modal-content">
+    </div>
+    <!-- imageModal - 클릭하면 원본크기로 보기 -->
+
 
     
 

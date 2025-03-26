@@ -11,7 +11,7 @@ $(function(){
 })
 
 
-
+// sub_Web.html 용 이미지 전체 보기
 function openModal(imgElement) {
     var modal = document.getElementById("imageModal");
     var fullImage = document.getElementById("fullImage");

@@ -16,6 +16,9 @@ a{
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-y: scroll;
+}
 
 :root{
     --cyan : #0088ff;
@@ -26,6 +29,7 @@ a{
     --header_height : 120px;
     --width_inner : 1200px;
     --sub_background : #eee;
+    --mainColor_theborn : #c42F34;
 }
 .sub_text{
     color: #666;
@@ -187,6 +191,105 @@ h4{
 /* intro */
 
 
+/* sub_UXUI.html */
+.uxui .inner>div{
+    margin-bottom: var(--main_gap);
+}
+.uxui .inner h4{
+    margin-bottom: var(--sub_gap);
+}
+.uxui .summary{
+    margin-bottom: 0;
+}
+.uxui h2{
+    margin: var(--sub_gap) 0;
+}
+.uxui .part1{
+    width: 100%; 
+    display: flex;
+    /* padding: var(--main_gap) 0; */
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: var(--sub_background); */
+}
+.uxui .part1 .img_area img{
+    height: calc(100vh - var(--header_height) - 100px - 2*var(--main_gap));
+}
+.uxui .part1 .text_area{
+    width: 700px;
+    /* background-color: yellow; */
+}
+.uxui .part2 img{
+    width: 100%;
+}
+.uxui .part3 .font_mainMenu{
+    font-size: 28pt;
+    font-weight: 700;
+    color: var(--mainColor_theborn);
+}
+.uxui .part3 .font_subMenu{
+    font-size: 24pt;
+    font-weight: 700;
+}
+.uxui .part3 .font_subTitle{
+    font-size: 44pt;
+    font-weight: 700;
+    color: var(--mainColor_theborn);
+}
+.uxui .part3 .font_text{
+    font-size: 16pt;
+    font-weight: 500;
+}
+.uxui .part3 .font_footer
+{
+    font-size: 10pt;
+    font-weight: 300;
+    color: #666666;
+}
+.uxui .part3 .colorChipContainer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: var(--sub_gap);
+}
+.uxui .part3 .colorChipContainer div{
+    width: 150px; height: 200px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    padding: var(--sub_gap);
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.uxui .part3 .colorChipContainer div:nth-child(1){
+    background-color: #c42f34; color: white;
+}
+.uxui .part3 .colorChipContainer div:nth-child(2){
+    background-color: #ffffff; color: black;
+}
+.uxui .part3 .colorChipContainer div:nth-child(3){
+    background-color: #000000; color: white;
+}
+.uxui .part3 .colorChipContainer div:nth-child(4){
+    background-color: #666666; color: white;
+}
+.uxui .part3 .colorChipContainer div:hover{
+    animation: shake 0.3s ease;
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+.uxui .part3 .colorChipContainer div p{
+    font-weight: 800;
+}
+.uxui .part4 img{
+    width: 100%;
+}
 
 
 /* sub_Web.html */
@@ -257,8 +360,7 @@ h4{
     border-radius: 50px;
     margin: var(--sub_gap);
     margin-right: 0;
-    float: right;
-    
+    float: right;   
 }
 .web .button:hover{
     background-color: #000;
@@ -269,7 +371,7 @@ h4{
 .modal {
     display: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
@@ -282,9 +384,17 @@ h4{
     max-height: 90%;
     margin-top: var(--sub_gap);
 }
-
+/* .close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+} */
 
 /* sub_Video.html */
+
 .video .selection{
     width: 100%;
     background-color: var(--sub_background);
@@ -301,13 +411,16 @@ h4{
 .video .selection .inner div a:hover{
     color: var(--cyan);
 }
+
+.video section .inner>div{
+    margin-bottom: var(--main_gap);
+}
 .video section .inner h2{
     margin: var(--sub_gap) 0;
 }
 .video section .inner .wrap{
     display: flex;
     justify-content: space-between;
-    margin-bottom: var(--main_gap);
 }
 .video section .inner .movie_area{
     width: calc(var(--width_inner) * 0.5);
@@ -326,14 +439,32 @@ h4{
 .video section .inner>div{
     scroll-margin-top: var(--header_height);
 }
-.video table.tool{
+.video section .inner table.tool{
     margin-left: var(--sub_gap);
     text-align: left;
     border-collapse: separate;
     border-spacing: var(--sub_gap) 0;
 }
 
-
+.video section .inner>div{
+    position: relative;
+}
+.video section .inner>div button{
+    width: 200px; height: 40px;
+    background-color: var(--sub_background);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    margin-top: var(--sub_gap);
+    position: absolute; right: 0; top: calc(1 * var(--sub_gap));
+    border: none;
+    font-size: inherit;
+}
+.video section .inner>div button:hover{
+    background-color: #000;
+    color: white;
+    font-weight: 800;
+}
 
 
 /* sub_Graphic.html */
