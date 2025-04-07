@@ -304,6 +304,33 @@ h4{
 .web .summary img{
     width: 100%;;
 }
+
+.web .summary>div{
+    position: relative;   
+    overflow: hidden;
+}
+.web .summary .description{
+    position: absolute; 
+    padding: var(--sub_gap);
+    bottom: 0; 
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    transform: translateY(150%);
+}
+.web .summary:hover .description{
+    transform: translateY(0);
+}
+.web .summary .description h4{
+    margin-bottom: var(--sub_gap);
+}
+
+
 .web .main{
     width: 100%;
     display: flex;
